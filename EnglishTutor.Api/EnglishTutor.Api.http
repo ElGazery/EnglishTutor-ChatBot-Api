@@ -1,0 +1,34 @@
+@HostAddress = http://localhost:5082
+
+GET {{HostAddress}}/
+Accept: application/json
+
+###
+
+POST {{HostAddress}}/api/account/register
+Content-Type: application/json
+
+{
+  "fullName": "Student User",
+  "email": "student@example.com",
+  "password": "Password123!",
+  "gradeLevel": "Second Prep"
+}
+
+###
+
+POST {{HostAddress}}/api/account/login
+Content-Type: application/json
+
+{
+  "email": "student@example.com",
+  "password": "Password123!"
+}
+
+###
+
+GET {{HostAddress}}/api/sessions
+Authorization: Bearer {{token}}
+Accept: application/json
+
+###

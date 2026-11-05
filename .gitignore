@@ -1,0 +1,33 @@
+## Visual Studio & Rider
+.vs/
+.idea/
+*.user
+*.suo
+*.userprefs
+*.sln.docstates
+
+## Build results
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+build/
+dist/
+
+## Publish profiles & sensitive deploy files
+Properties/PublishProfiles/
+*.pubxml
+*.pubxml.user
+
+## Environment & Secrets
+EnglishTutor.Api/appsettings.Development.json
+EnglishTutor.Api/appsettings.Local.json
+*.local.json
+
+## Testing & Coverage
+TestResults/
+coverage/
+
+## OS generated files
+.DS_Store
+Thumbs.db
